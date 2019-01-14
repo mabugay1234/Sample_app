@@ -1,33 +1,55 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      title1: "Home"
+      title: "HELLO! WELCOME TO PAGE HOME"
+      content1: "This is Ruby website"
+      content2: "Please click link"
+      content3: Ruby on Rails
+      content4: Sign up
+      link3: "http://www.railstutorial.org/"
+    help:
+      title2: "Help"
+      content1: "SUPPORT ON RUBY"
+      content2: "WELCOME TO SUPPORT PAGE"
+      content3: "Get help on Ruby on Rails tutorials at"
+      content4: "Rails Help page tutorial"
+      content5: "To get help with this sample application, see"
+      content6: "Tutorial on Ruby on Rails"
+      link1: "http://www.railstutorial.org/help"
+      link2: "http://www.ra Whileutorial.org/book"
+    about:
+      title3: "About"
+      content1: "Ruby on Rails Tutorial"
+      content2: "book"
+      content3: "screencast series"
+      content4: "to teach web development with"
+      content5: "This is the sample application for the tutorial"
+      link4: http://www.railstutorial.org/
+      link5: http://www.railstutorial.org/book
+      link6: http://screencasts.railstutorial.org/
+      link7: http://rubyonrails.org/
+    contact:
+      title2: "Contact"
+      title1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      content1: "contact page"
+      link1: "http://www.railstutorial.org/help"
+      contact: Contact
+  layouts:
+    application:
+      full_title: "Ruby on Rails Tutorial Sample App"
+    footer:
+      about: About
+      contact: Contact
+      home: Home
+      rort: Ruby on Rails Tutorial by
+      name: Michael Hartl
+    header:
+      help: Help
+      login: Login
+      news: News
+      sa: sample app
+  users:
+    new:
+      title1: "Sign up"
+      content1: "This will be a signup page for new users."
