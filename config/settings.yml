@@ -2,3 +2,6 @@ max_length_name: 50
 max_length_email: 255
 min_length_password: 6
 one: 1
+user_gravatar: 50
+user_help_gravatar: 80
+page_limit: 30

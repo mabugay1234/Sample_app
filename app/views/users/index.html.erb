@@ -1,0 +1,6 @@
+<% provide :title, t("share.edit.edit") %>
+<h1><%= t "share.index.all_users" %></h1>
+<ul class="users">
+  <%= render @users %>
+</ul>
+<%= paginate @users, theme: "twitter-bootstrap-3"%>

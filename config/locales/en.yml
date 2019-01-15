@@ -53,6 +53,7 @@ en:
       profile: Profile
       setting: Settings
       logout: Log out
+      acount: Acount
   users:
     new:
       title1: Sign up
@@ -72,6 +73,13 @@ en:
       not: No users found, please re-enter.
       title1: "Sign up"
       content1: "This will be a signup page for new users."
+    edit:
+      edit: Edit user
+      schange: Save changes
+      change: Change
+      update: Update your profile
+    index:
+      all_users: All Users
   session:
     new:
       login: Login
@@ -79,3 +87,4 @@ en:
       new_user: Sign up now!
       combination: Email or Password combination
       remember: Remember on this PC
+sure: You sure?

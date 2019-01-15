@@ -72,6 +72,13 @@ vi:
       not: Không tìm thấy người dùng, vui lòng đăng nhập lại.
       title1: "Đăng ký"
       content1: "Đây là trang đăng ký tài khoản mới"
+    edit:
+      edit: Thay đổi
+      schange: Lưu thay đổi
+      change: Thay
+      update: Thay đổi thông tin
+    index:
+      all_users: Danh sách người dùng
   session:
     new:
       login: Đăng nhập
@@ -79,3 +86,4 @@ vi:
       new_user: Tạo tài khoản mới ngay
       combination: Email hoặc mật khẩu không đúng
       remember: Ghi nhớ đăng nhập
+sure: Bạn chắc chứ?
