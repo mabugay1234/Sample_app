@@ -7,10 +7,10 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      flash[:success] = t(".users_controller.success")
+      flash[:success] = t ".users_controller.success"
       redirect_to @user
     else
-      flash[:danger] = t(".users_controller.danger")
+      flash[:danger] = t ".users_controller.danger"
       render :new
     end
   end

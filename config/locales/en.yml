@@ -49,6 +49,10 @@ en:
       login: Login
       news: News
       sa: sample app
+      user: Users
+      profile: Profile
+      setting: Settings
+      logout: Log out
   users:
     new:
       title1: Sign up

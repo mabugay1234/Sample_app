@@ -42,6 +42,11 @@ vi:
       help: Giúp
       login: Đăng nhập
       sa: sample app
+      user: Người dùng
+      profile: Hồ sơ
+      setting: Cài đặt
+      logout: Đăng xuất
+      acount: Tài khoản
     footer:
       about: Trong khoảng
       contact: Tiếp xúc
