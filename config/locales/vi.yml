@@ -70,3 +70,12 @@ vi:
       contains: Biểu mẫu có chứa
       error: Lỗi.
       not: Không tìm thấy người dùng, vui lòng đăng nhập lại.
+      title1: "Đăng ký"
+      content1: "Đây là trang đăng ký tài khoản mới"
+  session:
+    new:
+      login: Đăng nhập
+      login1: Chào mừng tới trang đăng nhập MT
+      new_user: Tạo tài khoản mới ngay
+      combination: Email hoặc mật khẩu không đúng
+      remember: Ghi nhớ đăng nhập

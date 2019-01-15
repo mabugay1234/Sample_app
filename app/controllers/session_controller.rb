@@ -5,16 +5,30 @@ class SessionController < ApplicationController
     user = User.find_by email: params[:session][:email].downcase
 
     if user&.authenticate(params[:session][:password])
-      log_in user
-      redirect_to user
+      acc_activated user
     else
-      flash[:danger] = t "session.new.combination"
-      render :new
+      acc_no_activated
     end
   end
 
   def destroy
     log_out
     redirect_to root_url
+  end
+
+  def acc_activated user
+    log_in user
+
+    if params[:session][:remember_me] == Settings.one
+      remember user
+    else
+      forget user
+    end
+    redirect_to user
+  end
+
+  def acc_no_activated
+    flash.now[:danger] = t ".danger"
+    render :new
   end
 end
