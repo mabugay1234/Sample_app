@@ -1,0 +1,54 @@
+vi:
+  static_pages:
+    home:
+      title1: "Trang chủ"
+      title: "CHÀO BẠN! CHÀO MỪNG BẠN ĐẾN VỚI TRANG CHỦ WEBSITE"
+      content1: "Đây là trang web Ruby"
+      content2: "Xin vui lòng nhấn vào đường dẫn"
+      content3: Hồng ngọc trên đường ray
+      content4: Đăng nhập
+      link3: "http://www.railstutorial.org/"
+    help:
+      title2: "Hỗ trợ"
+      content1: "HỖ TRỢ VỀ HỌC RUBY"
+      content2: "CHÀO BẠN ĐẾN VỚI TRANG HỖ TRỢ"
+      content3: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+      content4: "Rails Hướng dẫn trang trợ giúp"
+      content5: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
+      content6: "Hướng dẫn về Ruby on Rails"
+      link1: "http://www.railstutorial.org/help"
+      link2: "http://www.ra Whileutorial.org/book"
+    about:
+      title3: "Giới thiệu"
+      content1: "Hướng dẫn về Ruby on Rails"
+      content2: "cuốn sách"
+      content3: "loạt screencast"
+      content4: "để dạy phát triển web với"
+      content5: "Đây là ứng dụng mẫu cho hướng dẫn. "
+      link4: http://www.railstutorial.org/
+      link5: http://www.railstutorial.org/book
+      link6: http://screencasts.railstutorial.org/
+      link7: http://rubyonrails.org/
+    contact:
+      title2: "Ứng dụng mẫu"
+      title1: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
+      content1: "Trang ứng dụng mẫu"
+      link1: "http://www.railstutorial.org/help"
+  layouts:
+    application:
+      full_title: "Trang cơ bản về Ruby on rails"
+    header:
+      home: Nhà
+      help: Giúp
+      login: Đăng nhập
+      sa: sample app
+    footer:
+      about: Trong khoảng
+      contact: Tiếp xúc
+      news: Tin tức
+      rort: Hồng ngọc trên đường ray bởi
+      name: Michael Hartl
+  users:
+    new:
+      title1: "Đăng ký"
+      content1: "Đây là trang đăng ký tài khoản mới"
