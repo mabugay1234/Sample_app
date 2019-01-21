@@ -1,43 +1,43 @@
 en:
   static_pages:
     home:
-      title1: "Home"
-      title: "HELLO! WELCOME TO PAGE HOME"
-      content1: "This is Ruby website"
-      content2: "Please click link"
+      title1: Home
+      title: HELLO! WELCOME TO PAGE HOME
+      content1: This is Ruby website
+      content2: Please click link
       content3: Ruby on Rails
       content4: Sign up
-      link3: "http://www.railstutorial.org/"
+      link3: http://www.railstutorial.org/
     help:
-      title2: "Help"
-      content1: "SUPPORT ON RUBY"
-      content2: "WELCOME TO SUPPORT PAGE"
-      content3: "Get help on Ruby on Rails tutorials at"
-      content4: "Rails Help page tutorial"
-      content5: "To get help with this sample application, see"
-      content6: "Tutorial on Ruby on Rails"
-      link1: "http://www.railstutorial.org/help"
-      link2: "http://www.ra Whileutorial.org/book"
+      title2: Help
+      content1: SUPPORT ON RUBY
+      content2: WELCOME TO SUPPORT PAGE
+      content3: Get help on Ruby on Rails tutorials at
+      content4: Rails Help page tutorial
+      content5: To get help with this sample application, see
+      content6: Tutorial on Ruby on Rails
+      link1: http://www.railstutorial.org/help
+      link2: http://www.ra Whileutorial.org/book
     about:
-      title3: "About"
-      content1: "Ruby on Rails Tutorial"
-      content2: "book"
-      content3: "screencast series"
-      content4: "to teach web development with"
-      content5: "This is the sample application for the tutorial"
+      title3: About
+      content1: Ruby on Rails Tutorial
+      content2: book
+      content3: screencast series
+      content4: to teach web development with
+      content5: This is the sample application for the tutorial
       link4: http://www.railstutorial.org/
       link5: http://www.railstutorial.org/book
       link6: http://screencasts.railstutorial.org/
       link7: http://rubyonrails.org/
     contact:
-      title2: "Contact"
-      title1: "Contact the Ruby on Rails Tutorial about the sample app at the"
-      content1: "contact page"
-      link1: "http://www.railstutorial.org/help"
+      title2: Contact
+      title1: Contact the Ruby on Rails Tutorial about the sample app at the
+      content1: contact page
+      link1: http://www.railstutorial.org/help
       contact: Contact
   layouts:
     application:
-      full_title: "Ruby on Rails Tutorial Sample App"
+      full_title: Ruby on Rails Tutorial Sample App
     footer:
       about: About
       contact: Contact
@@ -51,5 +51,18 @@ en:
       sa: sample app
   users:
     new:
-      title1: "Sign up"
-      content1: "This will be a signup page for new users."
+      title1: Sign up
+      content1: This will be a signup page for new users.
+      name: Name
+      password: Password
+      xnmk: Confirmation
+      signup: Sign Up New
+    users_controller:
+      danger: Failure
+      success: Welcome to the sample application
+      danger: Failure
+  share:
+    _error_messages:
+      contains: The form contains
+      error: Error.
+      not: No users found, please re-enter.
