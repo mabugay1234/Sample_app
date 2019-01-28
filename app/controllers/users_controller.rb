@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
+      @user.send_activation_email
       flash[:success] = t ".users_controller.success"
       redirect_to @user
     else
