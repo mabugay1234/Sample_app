@@ -86,4 +86,19 @@ vi:
       new_user: Tạo tài khoản mới ngay
       combination: Email hoặc mật khẩu không đúng
       remember: Ghi nhớ đăng nhập
-sure: Bạn chắc chứ?
+  sure: "Bạn chắc chứ?"
+  aa_text1: Xin Chào
+  aa_text2: Chào mừng bạn đến với Sample App! Lựa chọn đường dẫn để kích hoạt tài khoản:"
+  aa_html1: Xin chào
+  aa_success: Tài khoản được kích hoạt!
+  aa_danger: Liên kết không hợp lệ
+  sample_email: Sample Email
+  user_mail_hi: Chào
+  account_activation: Kích hoạt tài khoản
+  activate: Kích hoạt
+  p_s_c_info: Hướng dẫn đặt lại mật khẩu của bạn
+  p_s_c_danger: Địa chỉ email không tồn tại
+  p_s_c_update: Không được để trống
+  p_s_c_success: Mật khẩu đã được đặt lại
+  p_s_c_check_e: Hết hiệu lực đổi mật khẩu
+  password_reset: Đổi mật khẩu
