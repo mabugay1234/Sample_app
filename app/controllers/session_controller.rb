@@ -18,17 +18,12 @@ class SessionController < ApplicationController
 
   def acc_activated user
     log_in user
-
-    if params[:session][:remember_me] == Settings.one
-      remember user
-    else
-      forget user
-    end
-    redirect_to user
+    params[:session][:remember_me] == Settings.one ? remember(user) : forget(user)
+    redirect_back_or user
   end
 
   def acc_no_activated
     flash.now[:danger] = t ".danger"
-    render :new
+    redirect_to root_url
   end
 end

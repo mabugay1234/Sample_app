@@ -64,7 +64,7 @@ en:
       signup: Sign Up New
     users_controller:
       danger: Failure
-      success: Welcome to the sample application
+      success: Please check your email to activate your account.
       danger: Failure
   share:
     _error_messages:
@@ -87,4 +87,15 @@ en:
       new_user: Sign up now!
       combination: Email or Password combination
       remember: Remember on this PC
-sure: You sure?
+  sure: "You sure?"
+  aa_text1: Hello
+  aa_text2: "Welcome to the Sample App! Click on the link below to activate your account:"
+  aa_html1: Hi
+  aa_html2: Welcome to the Sample App! Click on the link below to activate your account
+  aa_success: Account activated!
+  aa_danger: Invalid activation link
+  sample_email: Sample Email
+  user_mail_hi: Hi
+  account_activation: Account Activation
+  activate: Activate
+
