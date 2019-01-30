@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_reader :remember_token, :activation_token
+  attr_reader :remember_token, :activation_token, :reset_token
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
   validates :email, presence: true, length:

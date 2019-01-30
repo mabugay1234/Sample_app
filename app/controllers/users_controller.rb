@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.send_activation_email
       flash[:success] = t ".users_controller.success"
-      redirect_to @user
+      redirect_to root_url
     else
       flash[:danger] = t ".users_controller.danger"
       render :new
@@ -67,7 +67,9 @@ class UsersController < ApplicationController
   end
 
   def find_user
-    @user = User.find_by id: params[:id]
+    return if (@user = User.find_by id: params[:id])
+    flash[:danger] = t "ession.create.logged_danger"
+    redirect_to login_url
   end
 
   def correct_user

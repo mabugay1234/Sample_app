@@ -18,7 +18,11 @@ class SessionController < ApplicationController
 
   def acc_activated user
     log_in user
-    params[:session][:remember_me] == Settings.one ? remember(user) : forget(user)
+    if params[:session][:remember_me] == Settings.remember_me
+      remember user
+    else
+      forget user
+    end
     redirect_back_or user
   end
 
