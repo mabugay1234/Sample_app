@@ -96,3 +96,14 @@ vi:
   user_mail_hi: Chào
   account_activation: Kích hoạt tài khoản
   activate: Kích hoạt
+  p_r_c_info: Hướng dẫn đặt lại mật khẩu của bạn
+  p_r_c_danger: Địa chỉ email không tồn tại
+  p_r_c_update: Không được để trống
+  p_r_c_success: Mật khẩu đã được đặt lại
+  p_r_c_check_e: Hết hiệu lực đổi mật khẩu
+  p_r_c_danger: Không tìm thấy người dùng
+  password_reset: Đổi mật khẩu  password_reset_html1: "Click link để đổi mật khẩu"
+  password_reset_html2: Liên kết này chỉ tồn tại trong 2 tiếng
+  password_reset_html3: Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên.
+  forgotpassword: Đổi mật khẩu
+  submit: Đồng ý

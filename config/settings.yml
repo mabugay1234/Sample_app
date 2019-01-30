@@ -4,4 +4,5 @@ min_length_password: 6
 one: 1
 user_gravatar: 50
 user_help_gravatar: 80
-page_limit: 30
+page_limit: 20
+reset_sent_at: 2
