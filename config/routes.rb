@@ -14,5 +14,9 @@ Rails.application.routes.draw do
     resources :account_activations, only: [:edit]
     resources :users, only: %i(index show create edit update destroy) do
       get "page/:page", action: :index, on: :collection
+    end
+    resources :users
+    resources :account_activations, only: [:edit]
+    resources :password_resets, only: [:new, :create, :edit, :update]
   end
 end
