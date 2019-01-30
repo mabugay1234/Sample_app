@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'password_resets/new'
-  get 'password_resets/edit'
   scope "(:locale)", locale: /en|vi/ do
     root "static_pages#home"
     get "/help", to: "static_pages#help"
@@ -17,5 +15,5 @@ Rails.application.routes.draw do
   resources :users, only: %i(index show create edit update destroy) do
     get "page/:page", action: :index, on: :collection
   end
-  resources :password_resets,     only: [:new, :create, :edit, :update]
+  resources :password_resets, only: [:new, :create, :edit, :update]
 end

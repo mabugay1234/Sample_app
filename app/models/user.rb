@@ -6,7 +6,7 @@ class User < ApplicationRecord
     {maximum: Settings.max_length_email},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :password, presence: true, length:
-    {minimum: Settings.min_length_password}
+    {minimum: Settings.min_length_password}, allow_nil: true
   before_save :downcase_email
   before_create :create_activation_digest
   has_secure_password
@@ -33,6 +33,7 @@ class User < ApplicationRecord
 
   def authenticated? attribute, token
     digest = send("#{attribute}_digest")
+
     return false if digest.nil?
     BCrypt::Password.new(digest).is_password?(token)
   end
@@ -55,16 +56,17 @@ class User < ApplicationRecord
   end
 
   def create_reset_digest
-    self.reset_token = User.new_token
-    update_attribute(:reset_digest,  User.digest(reset_token))
-    update_attribute(:reset_sent_at, Time.zone.now)
+    @reset_token = User.new_token
+    update reset_diges: User.digest(reset_token), reset_sent_at: Time.zone.now
   end
 
-  # Sends password reset email.
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
   end
 
+  def password_reset_expired?
+    reset_sent_at < Settings.reset_sent_at.hours.ago
+  end
 
   private
 
