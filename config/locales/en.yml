@@ -98,4 +98,9 @@ en:
   user_mail_hi: Hi
   account_activation: Account Activation
   activate: Activate
-
+  p_s_c_info: Email sent with password reset instructions
+  p_s_c_danger: Email address not found
+  p_s_c_update: can't be empty
+  p_s_c_success: Password has been reset
+  p_s_c_check_e: Password reset has expired.
+  password_reset: Password reset

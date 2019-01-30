@@ -96,3 +96,9 @@ vi:
   user_mail_hi: Chào
   account_activation: Kích hoạt tài khoản
   activate: Kích hoạt
+  p_s_c_info: Hướng dẫn đặt lại mật khẩu của bạn
+  p_s_c_danger: Địa chỉ email không tồn tại
+  p_s_c_update: Không được để trống
+  p_s_c_success: Mật khẩu đã được đặt lại
+  p_s_c_check_e: Hết hiệu lực đổi mật khẩu
+  password_reset: Đổi mật khẩu
