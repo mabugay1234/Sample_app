@@ -12,3 +12,6 @@ reset_sent_at: 2
 picture_size: 5
 picture_with: 400
 picture_height: 400
+follow_gravatar: 30
+user_per_page: 10
+micropost_per_page: 20
