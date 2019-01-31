@@ -1,16 +1,19 @@
 en:
+  javascript:
+    custom:
+      danger: Please choose a file smaller than 5MB!
   static_pages:
     home:
-      title1: Home
+      home: Home
       title: HELLO! WELCOME TO PAGE HOME
-      content1: This is Ruby website
-      content2: Please click link
-      content3: Ruby on Rails
-      content4: Sign up
+      ruby: This is Ruby website
+      click: Please click link
+      rails: Ruby on Rails
+      sign_up: Sign up
       link3: http://www.railstutorial.org/
     help:
-      title2: Help
-      content1: SUPPORT ON RUBY
+      help: Help
+      content: SUPPORT ON RUBY
       content2: WELCOME TO SUPPORT PAGE
       content3: Get help on Ruby on Rails tutorials at
       content4: Rails Help page tutorial
@@ -19,22 +22,19 @@ en:
       link1: http://www.railstutorial.org/help
       link2: http://www.ra Whileutorial.org/book
     about:
-      title3: About
-      content1: Ruby on Rails Tutorial
-      content2: book
-      content3: screencast series
-      content4: to teach web development with
-      content5: This is the sample application for the tutorial
-      link4: http://www.railstutorial.org/
-      link5: http://www.railstutorial.org/book
-      link6: http://screencasts.railstutorial.org/
-      link7: http://rubyonrails.org/
+      about: About
+      content_tut: Ruby on Rails Tutorial
+      content_book: book
+      content_screen: screencast series
+      content_web: to teach web development with
+      app_tut: This is the sample application for the tutorial
+      url_tut: http://www.railstutorial.org/
+      url_book: http://www.railstutorial.org/book
+      screencast: http://screencasts.railstutorial.org/
     contact:
-      title2: Contact
-      title1: Contact the Ruby on Rails Tutorial about the sample app at the
-      content1: contact page
-      link1: http://www.railstutorial.org/help
       contact: Contact
+      title: Contact the Ruby on Rails Tutorial about the sample app at the
+      page: contact page
   layouts:
     application:
       full_title: Ruby on Rails Tutorial Sample App
@@ -56,18 +56,21 @@ en:
       acount: Acount
   users:
     new:
-      title1: Sign up
-      content1: This will be a signup page for new users.
+      sign_up: Sign up
+      content: This will be a signup page for new users.
       name: Name
       password: Password
       xnmk: Confirmation
       signup: Sign Up New
     users_controller:
-      danger: Failure
       success: Please check your email to activate your account.
-      danger: Failure
+    destroy:
+      success: Deleted
+    user_html:
+      sure: "You sure?"
+      delete: Delete
   share:
-    _error_messages:
+    error_messages:
       contains: The form contains
       error: Error.
       not: No users found, please re-enter.
@@ -80,6 +83,30 @@ en:
       update: Update your profile
     index:
       all_users: All Users
+    user_info:
+      view_profile: View my profile
+      micropost: Micropost
+  micropost_form:
+    new_micropost: Compose new micropost...
+  user_mailer:
+    account_activation:
+      account_act: Account Activation
+      text_header: Hello
+      html_header: "Welcome to the Sample App! Click on the link below to activate your account:"
+      html_title: Hi
+      aa_html2: Welcome to the Sample App! Click on the link below to activate your account
+      success: Account activated!
+      danger: Invalid activation link
+      activate: Activate
+    password_reset:
+      info: Email sent with password reset instructions
+      danger: Email address not found
+      update: can't be empty
+      success: Password has been reset
+      check_danger: Password reset has expired.
+      find_danger: No find user
+      title: "Posted %{link1} ago"
+    sample_email: Sample Email
   session:
     new:
       login: Login
@@ -87,27 +114,25 @@ en:
       new_user: Sign up now!
       combination: Email or Password combination
       remember: Remember on this PC
-  sure: "You sure?"
-  aa_text1: Hello
-  aa_text2: "Welcome to the Sample App! Click on the link below to activate your account:"
-  aa_html1: Hi
-  aa_html2: Welcome to the Sample App! Click on the link below to activate your account
-  aa_success: Account activated!
-  aa_danger: Invalid activation link
-  sample_email: Sample Email
-  user_mail_hi: Hi
-  account_activation: Account Activation
-  activate: Activate
-  p_r_c_info: Email sent with password reset instructions
-  p_r_c_danger: Email address not found
-  p_r_c_update: can't be empty
-  p_r_c_success: Password has been reset
-  p_r_c_check_e: Password reset has expired.
-  p_r_c_danger: No find user
-  password_reset: Password reset
-  password_reset_html1: "To reset your password click the link below:"
-  password_reset_html2: This link will expire in two hours.
-  password_reset_html3: If you did not request your password to be reset, please ignore this email and your password will stay as it is.
-  forgotpassword: Forgot Password
-  submit: Submit
-
+  password_resets:
+    new:
+      forgotpassword: Forgot Password
+      submit: Submit
+  microposts:
+    micropost:
+      html: Posted
+      html2: ago.
+      delelte: Delete
+      sure: You sure?
+      picture_size: The picture less than 5MB
+    create:
+      success: Micropost created!
+      danger: Micropost not found!
+    destroy:
+      success: Micropost deleted
+      correct_danger: Error
+      danger: Failure
+    home:
+      feed: Micropost Feed
+  post: Post
+  app_controller_danger: Please log in.

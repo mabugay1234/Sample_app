@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_reader :remember_token, :activation_token, :reset_token
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
@@ -52,7 +53,7 @@ class User < ApplicationRecord
   end
 
   def current_user? user
-    user == current_user
+    self == user
   end
 
   def create_reset_digest
@@ -66,6 +67,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.reset_sent_at.hours.ago
+  end
+
+  def feed
+    micropots.order_desc
   end
 
   private
