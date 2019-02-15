@@ -10,10 +10,10 @@ class PasswordResetsController < ApplicationController
     if @user
       @user.create_reset_digest
       @user.send_password_reset_email
-      flash[:info] = t "p_r_c_info"
+      flash[:info] = t "info"
       redirect_to root_url
     else
-      flash.now[:danger] = t "p_r_c_danger"
+      flash.now[:danger] = t "danger"
       render :new
     end
   end
@@ -22,12 +22,12 @@ class PasswordResetsController < ApplicationController
 
   def update
     if params[:user][:password].empty?
-      @user.errors.add(:password, t("p_r_c_update"))
+      @user.errors.add(:password, t("update"))
       render :edit
     elsif @user.update user_params
       log_in @user
       @user.update reset_digest: nil
-      flash[:success] = t "p_r_c_success"
+      flash[:success] = t "success"
       redirect_to @user
     else
       render :edit
@@ -42,7 +42,7 @@ class PasswordResetsController < ApplicationController
 
   def find_user
     return if (@user = User.find_by email: params[:email])
-    flash[:danger] = t "p_r_c_danger"
+    flash[:danger] = t "find_danger"
     redirect_to root_url
   end
 
@@ -53,7 +53,7 @@ class PasswordResetsController < ApplicationController
 
   def check_expiration
     return unless @user.password_reset_expired?
-    flash[:danger] = t "p_r_c_check_e"
+    flash[:danger] = t "check_danger"
     redirect_to new_password_reset_url
   end
 end

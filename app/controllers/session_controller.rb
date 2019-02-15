@@ -28,7 +28,7 @@ class SessionController < ApplicationController
   end
 
   def acc_no_activated
-    flash.now[:danger] = t ".danger"
+    flash.now[:danger] = t "danger"
     redirect_to root_url
   end
 end

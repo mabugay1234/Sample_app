@@ -1,8 +1,14 @@
+one: 1
 max_length_name: 50
 max_length_email: 255
 min_length_password: 6
-one: 1
+max_length_micropost: 140
+micropost_gravatar_size: 50
 user_gravatar: 50
 user_help_gravatar: 80
+user_info: 50
 page_limit: 20
 reset_sent_at: 2
+picture_size: 5
+picture_with: 400
+picture_height: 400

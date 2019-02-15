@@ -20,15 +20,14 @@ class UsersController < ApplicationController
       flash[:success] = t ".users_controller.success"
       redirect_to @user
     else
-      flash[:danger] = t ".users_controller.danger"
+      flash[:danger] = t "danger"
       render :new
     end
   end
 
   def show
-    return if @user.present?
-    flash[:error] = t ".not"
-    redirect_to signup_path
+    @microposts = @user.microposts.order_desc.page(params[:page])
+                       .per Settings.page_limit
   end
 
   def edit; end
@@ -38,16 +37,16 @@ class UsersController < ApplicationController
       flash[:success] = t ".success"
       redirect_to @user
     else
-      flash[:danger] = t ".danger"
+      flash[:danger] = t "danger"
       render :edit
     end
   end
 
   def destroy
     if @user&.destroy
-      flash[:success] = t ".success"
+      flash[:success] = t "success"
     else
-      flash[:danger] = t ".danger"
+      flash[:danger] = t "danger"
     end
     redirect_to users_url
   end
@@ -71,8 +70,7 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    find_user
-    redirect_to root_url unless current_user? @user
+    redirect_to root_url unless current_user.current_user? @user
   end
 
   def admin_user

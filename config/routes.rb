@@ -11,9 +11,10 @@ Rails.application.routes.draw do
     delete "/logout", to: "session#destroy"
     post "/signup",  to: "users#create"
   end
-  resources :account_activations, only: [:edit]
+  resources :password_resets, only: %i(new create edit update)
+  resources :account_activations, only: %i(edit)
+  resources :microposts, only: %i(create destroy)
   resources :users, only: %i(index show create edit update destroy) do
     get "page/:page", action: :index, on: :collection
   end
-  resources :password_resets, only: [:new, :create, :edit, :update]
-end
+ end

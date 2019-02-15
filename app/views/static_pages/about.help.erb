@@ -1,12 +1,12 @@
-<% provide :title, t(".title3") %>
+<% provide :title, t(".about") %>
 <title><%= yield :title %></title>
 <p>
-  <%= link_to t(".link4"), "http://www.railstutorial.org/" %><em><%= t ".content1" %></em>
-  <%= link_to t(".link5"), "http://www.railstutorial.org/book" %><%= t ".content2" %>
+  <%= link_to t(".url_tut"), "http://www.railstutorial.org/" %><em><%= t ".content_tut" %></em>
+  <%= link_to t(".url_book"), "http://www.railstutorial.org/book" %><%= t ".content_book" %>
   <br>
-  <%= link_to t(".link6"), "http://screencasts.railstutorial.org/" %><%= t ".content3" %>
-  <%= t ".content4" %>
+  <%= link_to t(".screencast"), "http://screencasts.railstutorial.org/" %><%= t ".content_screen" %>
+  <%= t ".content_web" %>
   <br>
-  <%= link_to t(".link7"), "http://rubyonrails.org/" %>
-  <%= t ".content5" %>
+  <%= link_to t(".url_tut"), "http://rubyonrails.org/" %>
+  <%= t ".app_tut" %>
 </p>
