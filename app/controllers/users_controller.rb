@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :logged_in_user, only: %i(index edit update destroy following
+    followers)
   before_action :correct_user, only: %i(edit update)
   before_action :find_user, only: %i(show destroy)
   before_action :admin_user, only: %i(destroy)

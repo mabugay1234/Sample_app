@@ -1,5 +1,11 @@
 class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+    foreign_key: "follower_id", dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+    foreign_key: "followed_id", dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
   attr_reader :remember_token, :activation_token, :reset_token
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
@@ -69,8 +75,20 @@ class User < ApplicationRecord
     reset_sent_at < Settings.reset_sent_at.hours.ago
   end
 
+  def follow orther_user
+    following << orther_user
+  end
+
+  def unfollow orther_user
+    following.delete orther_user
+  end
+
+  def following? orther_user
+    following.include? orther_user
+  end
+
   def feed
-    micropots.order_desc
+    Micropost.where user_id: following_ids << id
   end
 
   private

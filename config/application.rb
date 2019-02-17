@@ -14,6 +14,7 @@ module SampleApp
   class Application < Rails::Application
     config.load_defaults 5.2
     config.generators.system_tests = nil
+    config.action_view.embed_authenticity_token_in_remote_forms = true
     config.before_configuration do
       env_file = File.join(Rails.root, "config", "local_env.yml")
       YAML.load(File.open(env_file)).each do |key, value|
